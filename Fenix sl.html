@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FENIX</title>
+	<link rel="stylesheet" href="formatof.css">
+</head>
+<body>
+	<div class="header">
+  <h1>Pinturas y Decoración Fénix</h1>
+  <ul class="nav">
+    <li class="button"><a href="#inicio">Inicio</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</header>
+
+<div id="inicio">
+  <h2>Inicio</h2>
+  <p>Bienvenido a la página web de Pinturas y Decoración Fénix.</p>
+</div>
+
+<div id="productos">
+  <h2>Productos</h2>
+  <p>En nuestra tienda encontrarás una amplia variedad de productos para pintar y decorar tu hogar.</p>
+</div>
+
+<div id="servicios">
+  <h2>Servicios</h2>
+  <p>Ofrecemos una amplia gama de servicios de pintura y decoración.</p>
+</div>
+
+<div id="contacto">
+  <h2>Contacto</h2>
+  <p>Contacta con nosotros para más información.</p>
+</div>
+<section id="formulario">
+  <h2>Formulario</h2>
+
+  <form action="guardar-informacion.php" method="post">
+    <input type="text" name="nombre" placeholder="Nombre">
+    <input type="text" name="apellidos" placeholder="Apellidos">
+    <input type="email" name="correo" placeholder="Correo electrónico">
+    <input type="submit" value="Enviar">
+  </form>
+</section>
+<section>
+	<form action="contact.php" method="post"> 
+		<div class="elem-group">
+			<label for="name">Nombre</label> 
+			<input type="text" id="name" name="visitor_name" placeholder="Nombre de ejemplo" pattern=[A-Z\sa-z]{3,20} required> 
+		</div> 
+		<div class="elem-group"> 
+			<label for="email">Correo electrónico</label> 
+			<input type="email" id="email" name="visitor_email" placeholder="ejemplo@email.com" required> 
+		</div> 
+		<div class="elem-group"> 
+			<label for="department-selection">Área a contactar</label> 
+			<select id="department-selection" name="concerned_department" required> 
+				<option value="">Selecciona un área</option> 
+				<option value="billing">Facturación</option> 
+				<option value="marketing">Marketing</option> 
+				<option value="technical support">Servicio al cliente</option> 
+			</select> </div> <div class="elem-group"> 
+				<label for="title">Motivo de contacto</label> 
+				<input type="text" id="title" name="email_title" required placeholder="Problema/Consulta" pattern=[A-Za-z0-9\s]{8,60}> </div> 
+				<div class="elem-group"> <label for="message">Solicitud</label> 
+					<textarea id="message" name="visitor_message" placeholder="Escribe tu mensaje aquí." required></textarea> 
+				</div> 
+				<button type="submit">Enviar mensaje</button></form>
+</section>
+</body>
+</html>
