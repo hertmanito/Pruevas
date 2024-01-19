@@ -45,38 +45,3 @@
 .nav li:hover {
   border-bottom: 1px solid #000;
 }
-body {
-  background-color: #ffffff;
-  font-family: sans-serif;
-  font-size: 16px;
-}
-
-.navbar {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.navbar a {
-  color: #ffffff;
-}
-
-.hero {
-  background-image: url("imagen.jpg");
-}
-
-.product {
-  margin-bottom: 20px;
-}
-
-.service {
-  margin-bottom: 20px;
-}
-
-.contact {
-  margin-bottom: 20px;
-}
-
-.form-control {
-  width: 100%;
-}
-
